@@ -268,6 +268,9 @@
   .case .cbrand{font-weight:700;color:var(--white);font-size:18px}
   .case .ctag{font-size:11px;color:#c98a7e;letter-spacing:.06em}
   .case .ctitle{color:var(--gray-d);font-size:13.5px;margin-bottom:22px}
+  .case-media{display:block;position:relative;aspect-ratio:4/5;margin:20px 0 18px;border-radius:5px;overflow:hidden;border:1px solid var(--line);background:var(--charcoal);text-decoration:none}
+  .case-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .case-media:hover{border-color:var(--oxblood-b)}
   .case .metrics{display:grid;grid-template-columns:1fr 1fr;gap:18px 12px;border-top:1px solid var(--line);padding-top:20px}
   .case .m .mn{font-family:'Helvetica Neue',Arial,sans-serif;font-size:26px;font-weight:700;color:var(--white);line-height:1}
   .case .m .ml{font-size:11px;color:var(--gray-d);letter-spacing:.04em;margin-top:5px}
@@ -296,6 +299,7 @@
   .gcard{position:relative;display:block;aspect-ratio:4/5;border:1px solid var(--line);border-radius:5px;overflow:hidden;text-decoration:none;background:linear-gradient(150deg,var(--charcoal2),var(--ink));transition:.3s}
   .gcard:hover{border-color:var(--oxblood-b);transform:translateY(-4px)}
   .gcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .gcard img.shift-up{object-position:center 72%}
   .gcard img.fit-contain{object-fit:contain;background:var(--charcoal)}
   .gcard .gph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--gray-dd)}
   .gcard .gph svg{width:30px;height:30px;opacity:.6}
@@ -493,19 +497,22 @@
     <p class="lead">글로벌 럭셔리부터 그루밍·스킨케어까지. 세르칸의 큐레이션에 브랜드를 얹은 실제 협업입니다. 캠페인별 상세 성과 리포트는 요청 시 제공합니다.</p>
     <div class="cases">
       <div class="case">
-        <div class="ch"><span class="cbrand">쌤앤파커스</span><span class="ctag">세르칸 X 쌤앤파커스</span></div>
-        <div class="ctitle">베스트셀러 도서 협업 게시물</div>
+        <div class="ch"><span class="cbrand">디올 뷰티</span><span class="ctag">세르칸 X 디올 뷰티</span></div>
+        <div class="ctitle">스킨케어 제품 협업 게시물</div>
+        <a class="case-media" href="https://www.instagram.com/p/DZ17sWtmvUv/?img_index=1" target="_blank" rel="noopener"><img src="assets/case-dior-skincare.png" alt="디올이 말하는 남성을 위한 스킨케어"></a>
         <div class="ctags"><span>피드 캐러셀</span><span>에디토리얼</span></div>
       </div>
       <div class="case">
         <div class="ch"><span class="cbrand">BULLDOG</span><span class="ctag">세르칸 X 불독</span></div>
         <div class="ctitle">그루밍 루틴키트 협업 콘텐츠</div>
-        <div class="ctags"><span>릴스</span><span>루틴</span></div>
+        <a class="case-media" href="https://www.instagram.com/p/DXV2ovqEqMY/?img_index=1" target="_blank" rel="noopener"><img src="assets/case-bulldog-shave.png" alt="면도 디테일 체크리스트"></a>
+        <div class="ctags"><span>피드 캐러셀</span><span>루틴</span></div>
       </div>
       <div class="case">
         <div class="ch"><span class="cbrand">d'Alba</span><span class="ctag">세르칸 X 달바</span></div>
         <div class="ctitle">펩타이드 부스터 협업 콘텐츠</div>
-        <div class="ctags"><span>피드</span><span>스킨케어</span></div>
+        <a class="case-media" href="https://www.instagram.com/p/DYThy-TGmTP/?img_index=1" target="_blank" rel="noopener"><img src="assets/case-dalba-sunscreen.png" alt="달바 비건 선크림 협업 콘텐츠"></a>
+        <div class="ctags"><span>피드 캐러셀</span><span>스킨케어</span></div>
       </div>
     </div>
     <p class="rate-note">※ Dior Beauty 포함 전체 협업 레퍼런스 및 캠페인별 성과 리포트는 문의 시 별도 제공합니다.</p>
@@ -520,21 +527,21 @@
     <h2>세르칸이 만든<br><span class="em">콘텐츠 예시.</span></h2>
     <p class="lead">실제 게시물을 눌러 결과물을 직접 확인해 보세요. 각 카드에 인스타그램 게시물 링크가 연결됩니다.</p>
     <div class="gallery">
-    <a class="gcard" href="https://www.instagram.com/iamtheserkan/p/DOOi3XAkuWt/" target="_blank" rel="noopener">
-      <img src="assets/post-weekly-selfcare.png" alt="남자 일주일 자기관리 썸네일" loading="lazy">
-      <div class="gover"><div class="gt">남자 일주일 자기관리<small>체크리스트형 카드뉴스</small></div><span class="glink">게시물 보기 ↗</span></div>
+    <a class="gcard" href="https://www.instagram.com/p/DYA9Yq8EngT/?img_index=1" target="_blank" rel="noopener">
+      <img src="assets/post-appearance-checklist.png" alt="외모개선 체크리스트 썸네일" loading="lazy">
+      <div class="gover"><div class="gt">외모개선 체크리스트<small>체크리스트형 카드뉴스</small></div><span class="glink">게시물 보기 ↗</span></div>
     </a>
-    <a class="gcard" href="https://www.instagram.com/iamtheserkan/p/DOWCls3DKLs/" target="_blank" rel="noopener">
-      <img src="assets/post-no-need-to-overdo.png" alt="무리할 필요는 없습니다 썸네일" loading="lazy">
-      <div class="gover"><div class="gt">무리할 필요는 없습니다<small>브랜드 철학형</small></div><span class="glink">게시물 보기 ↗</span></div>
+    <a class="gcard" href="https://www.instagram.com/p/DYZMwkzmkLP/?img_index=1" target="_blank" rel="noopener">
+      <img src="assets/post-steady-effort.png" alt="꾸준한 노력 독보적 차이 썸네일" loading="lazy">
+      <div class="gover"><div class="gt">꾸준한 노력 독보적 차이<small>브랜드 철학형</small></div><span class="glink">게시물 보기 ↗</span></div>
     </a>
-    <a class="gcard" href="https://www.instagram.com/iamtheserkan/p/DaPriIPEmbd/" target="_blank" rel="noopener">
-      <img src="assets/post-sleepless-day.png" alt="잠 못잔 날 매력을 위한 행동지침 썸네일" loading="lazy">
-      <div class="gover"><div class="gt">잠 못잔 날, 매력을 위한 행동지침<small>릴스</small></div><span class="glink">게시물 보기 ↗</span></div>
+    <a class="gcard" href="https://www.instagram.com/reel/DQYKXkXkgQ6/" target="_blank" rel="noopener">
+      <img class="shift-up" src="assets/post-face-muscle-pen.png" alt="펜을 이용한 얼굴 근육 운동 썸네일" loading="lazy">
+      <div class="gover"><div class="gt">펜을 이용한 얼굴 근육 운동<small>릴스</small></div><span class="glink">게시물 보기 ↗</span></div>
     </a>
-    <a class="gcard" href="https://www.instagram.com/iamtheserkan/p/DaNHUcPGqU2/" target="_blank" rel="noopener">
-      <img src="assets/post-detail-quality.png" alt="품격을 정하는 디테일 썸네일" loading="lazy">
-      <div class="gover"><div class="gt">품격을 정하는 디테일<small>에디토리얼 카드뉴스</small></div><span class="glink">게시물 보기 ↗</span></div>
+    <a class="gcard" href="https://www.instagram.com/p/DZzE5i-mvDy/?img_index=1" target="_blank" rel="noopener">
+      <img src="assets/post-teto-redefinition.png" alt="테토남의 재정의 썸네일" loading="lazy">
+      <div class="gover"><div class="gt">‘테토남’의 재정의<small>에디토리얼 카드뉴스</small></div><span class="glink">게시물 보기 ↗</span></div>
     </a>
     <a class="gcard" href="https://www.instagram.com/iamtheserkan/p/DaHz5EGvJ3K/" target="_blank" rel="noopener">
       <img src="assets/post-bodyfat-change.png" alt="세르칸 자기관리 콘텐츠 썸네일" loading="lazy" class="fit-contain">
