@@ -151,6 +151,13 @@
   .rate-cap{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#c98a7e;margin:54px 0 4px;font-weight:600}
   .highlight-box{margin-top:30px;border:1px solid var(--oxblood-b);border-radius:4px;padding:22px 26px;background:linear-gradient(180deg,rgba(88,23,13,.28),transparent);color:var(--gray);font-size:15px}
   .highlight-box b{color:var(--white)}
+  .launch-offer{margin:34px 0 52px;border:1px solid var(--oxblood-b);border-radius:5px;padding:28px 30px;background:radial-gradient(circle at 90% 12%,rgba(122,36,23,.45),transparent 48%),linear-gradient(180deg,rgba(88,23,13,.42),var(--ink));display:grid;grid-template-columns:1fr auto;gap:8px 34px;align-items:end}
+  .launch-offer .lo-label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#e6b3a8;font-weight:700}
+  .launch-offer .lo-price{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:30px;line-height:1;color:var(--white);font-weight:700;white-space:nowrap}
+  .launch-offer .lo-price small{font-family:'Pretendard',sans-serif;font-size:12px;color:var(--gray-d);font-weight:400}
+  .launch-offer .lo-main{grid-column:1/-1;color:var(--white);font-size:18px;font-weight:600;margin-top:7px}
+  .launch-offer .lo-note{grid-column:1/-1;color:var(--gray-d);font-size:13.5px}
+  @media(max-width:600px){.launch-offer{grid-template-columns:1fr;padding:24px 22px;gap:10px}.launch-offer .lo-price{font-size:27px}.launch-offer .lo-main{font-size:16px}}
 
   /* PACKAGES */
   .pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
@@ -600,6 +607,13 @@
     <h2>광고 <span class="em">단가표</span></h2>
     <p class="lead">모든 상품은 기획·촬영·카피·디자인·검수를 포함한 <span class="pt">턴키(turn-key)</span> 진행입니다. 브랜드는 제품과 방향만 주시면 됩니다. 국내 그루밍·뷰티 카테고리 시장가에 세르칸의 <span class="pt">에디토리얼 완성도·참여율·95.8% 국내 도달</span>을 반영한 프리미엄 단가입니다.</p>
 
+    <div class="launch-offer">
+      <div class="lo-label">Launch Partner · 시작 구성</div>
+      <div class="lo-price">₩ 2,000,000 <small>VAT 별도</small></div>
+      <div class="lo-main">캐러셀 콘텐츠 1건 + 인스타 스토리</div>
+      <div class="lo-note">첫 유료 협업 브랜드 대상 · 릴스·현장 촬영·2차 활용은 사전 협의</div>
+    </div>
+
     <div class="rate-cap">Instagram 상품</div>
     <table class="rate">
       <thead><tr><th>상품</th><th>사이즈 · 구성</th><th>기간/횟수</th><th class="r">단가 (VAT 별도)</th></tr></thead>
@@ -621,9 +635,6 @@
       </tbody>
     </table>
 
-    <div class="highlight-box" style="border-color:var(--oxblood-b);background:linear-gradient(180deg,rgba(88,23,13,.42),transparent)">
-      <b style="color:#e6b3a8">LAUNCH PARTNER · 시작 구성</b> — 첫 유료 협업 브랜드는 <b>캐러셀 콘텐츠 1건 + 인스타 스토리</b>로 시작합니다. <b>₩ 2,000,000 (VAT 별도)</b> · 릴스·현장 촬영·2차 활용은 사전 협의합니다.
-    </div>
     <div class="highlight-box">
       <b>추가 제작·활용 범위</b> — 현장 촬영, 추가 콘텐츠 제작, 2차 활용은 프로젝트 범위와 사용 기간에 따라 별도 협의합니다.
     </div>
